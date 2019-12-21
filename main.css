@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image:url(sky.jpg);
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+    -webkit-animation: highway 5s linear infinite;
+}
+
+@keyframes highway{
+    100%{
+        transform: translateX(-1400px);
+        -webkit-transform: translateX(-1400px);
+        -moz-transform: translateX(-1400px);
+        -ms-transform: translateX(-1400px);
+        -o-transform: translateX(-1400px);
+}
+} 
+
+
+.city{
+    height: 250px;
+    width: 500%;
+    display: block;
+    background-image: url(city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+    -webkit-animation: city 20s linear infinite;
+}
+
+
+@keyframes city{
+    100%{
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+}
+} 
+
+
+.car{
+    width: 400px;
+    bottom: 100px;
+    left: 50%;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+    -webkit-animation: car 1s linear infinite;
+}
+
+
+
+@keyframes car{
+    100%{
+        transform: translateX(-1px);
+        -webkit-transform: translateX(-1px);
+        -moz-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+        -o-transform: translateX(-1px);
+    }
+
+    50%{
+        transform: translateX(-1px);
+        -webkit-transform: translateX(-1px);
+        -moz-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+        -o-transform: translateX(-1px);
+    }
+
+    25%{
+        transform: translateX(+1px);
+        -webkit-transform: translateX(+1px);
+        -moz-transform: translateX(+1px);
+        -ms-transform: translateX(+1px);
+        -o-transform: translateX(+1px);
+}
+} 
+
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation:wheel 1s linear infinite ;
+    -webkit-animation:wheel 1s linear infinite ;
+}
+
+.back-wheel{
+    left: -165px;
+    position: absolute;
+
+}
+
+.front-wheel{
+    left: 80px;
+    position: absolute;
+
+}
+
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+} 
